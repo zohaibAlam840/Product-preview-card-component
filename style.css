@@ -1,0 +1,117 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    overflow: hidden;
+    
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.87rem;
+    color: rgba(0, 0, 0, 0.321);
+    font-weight: 700;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+
+}
+.imag img{
+    width: 18vw;
+    height: 57vh;
+    min-width: 200px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.description{
+    min-width: 300px;
+    width: 20vw;
+    height: 57vh;
+    padding:3% 8% 0 5%;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.description > *{
+    margin-top: 20px;
+}
+.text{
+    line-height: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price p {
+    margin-left: 10px;
+}
+.price h1{
+    color:hsl(158, 36%, 37%);
+}
+.description button{
+    height: 5vh;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.description button object{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+@media (max-width: 376px){
+    body{
+        justify-content: start;
+        align-items: start;
+        padding: 30px 13px 30px 13px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .imag img{
+        height: 40vh;
+        width: 100%;
+        z-index: 1;
+        border-radius: 0%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .description{
+        position: relative;
+        bottom: 10px;
+        height: 50vh;
+        width: 100%;
+        min-width: none;
+        z-index: 2;
+        padding:3% 3% 0 4%;
+        border-radius: 0%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    p{
+        font-size: 1rem;
+        
+    }
+    .description button{
+        height: 6vh;
+        font-size: 0.9rem;
+        
+    }
+    .text{
+        line-height: 25px;
+    }
+    .description > *{
+        margin-top: 25px;
+    }
+}
